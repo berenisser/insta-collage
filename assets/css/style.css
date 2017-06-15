@@ -1,0 +1,45 @@
+/*
+verde: #45c48e;
+rosa: #d27940;
+*/
+
+section{
+	background: #3D7EAA;
+	background: -webkit-linear-gradient(to right top, #d27940, #45c48e); 
+	background: linear-gradient(to right top, #d27940, #45c48e);
+	height: 100vh;
+}
+
+.insta{
+	padding-top: 60px;
+}
+
+input{
+	background-color: rgba(255, 255, 255, 0.2);
+	outline: none;
+	border: none;
+	width: 100%;
+	line-height: 50px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	padding-left: 15px;
+}
+
+
+input[placeholder]{      
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+}
+
+input::placeholder {
+  color: #FFF;
+}
+
+.botoncito{
+	text-decoration: none;
+	color: #fff;
+	width: 100%;
+	border: 1px solid white;
+	padding: 18px 125px;
+	border-radius: 5px;
+}
