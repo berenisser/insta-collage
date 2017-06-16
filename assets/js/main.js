@@ -8,13 +8,15 @@ document.getElementById("btn-login").addEventListener('click', function(){
 	var inputPw = document.getElementById('password');
 
 	
-	validarNombre(inputNombre);
-	validarPassword(inputPw);
+	
 
 	if(validarNombre(inputNombre) && validarPassword(inputPw)){
 		//document.getElementById("btn-login").setAttribute("href","gallery.html"); 
-		window.open('collage.html');
-	} 
+		window.open('collage.html','_self',false);
+	} else{
+		validarNombre(inputNombre);
+		validarPassword(inputPw);
+	}
 
 });
 
@@ -27,9 +29,9 @@ function validarNombre(inputNombre) {
 		labelError.classList.add('error');
 		labelError.appendChild(rellenarText);
 		document.getElementById("nombre1").appendChild(labelError);
+		return false;
 		  
 	} else {  
-		document.getElementsByClassName("botoncito")[0].setAttribute("href","collage.html");
 		return true;
 	}  
 } 
@@ -43,8 +45,8 @@ function validarPassword(inputPw) {
 		labelError.classList.add('error');
 		labelError.appendChild(rellenarText);
 		document.getElementById("pw1").appendChild(labelError);
+		return false;
 	} else {  
-		document.getElementsByClassName("botoncito")[0].setAttribute("href","collage.html");
 		return true; 
 	}  
 } 
