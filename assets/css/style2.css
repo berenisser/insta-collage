@@ -1,0 +1,28 @@
+/* Seccion collage.html*/
+
+.gris{
+	background-color: lightgray;
+	height: 330px;
+	padding-left: 70px;
+	padding-top: 5px;
+}
+
+.caja{
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+	padding: 0;
+	margin: 5px;
+}
+
+.colu{
+	padding: 0;
+}
+
+.middle{
+	background-color: #26272b;
+	line-height: 50px;
+	color: #3d5a6f;
+	font-weight: bold;
+	font-size: 20px;
+}

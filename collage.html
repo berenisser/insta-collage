@@ -3,8 +3,68 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Collage</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style2.css">
 </head>
 <body>
-	Hola Mundo
+
+<!-- cajas contenedoras 4 -->
+	<div class="container-fluid middle text-center">
+		<i class="fa fa-instagram" aria-hidden="true"></i> PHOTO BOOTH
+	</div>
+
+	<section class="container gris" ondrop="drop(event)" ondragover="finalDrop(event)">
+		<div class="row">
+			
+				
+			<div class="col-xs-6 caja img-responsive" id="contiene1" ondrop="drop(event)" ondragover="finalDrop(event)">
+						
+			</div>
+			<div class="col-xs-6 caja" id="contiene2" ondrop="drop(event)" ondragover="finalDrop(event)">
+						
+			</div>
+			<div class="col-xs-6 caja" id="contiene3" ondrop="drop(event)" ondragover="finalDrop(event)">
+						
+			</div>
+			<div class="col-xs-6 caja" id="contiene4" ondrop="drop(event)" ondragover="finalDrop(event)">
+						
+			</div>
+						
+					
+		</div>
+	</section>
+
+	<div class="container-fluid middle text-center">
+		<i class="fa fa-instagram" aria-hidden="true"></i> PHOTO BOOTH
+	</div>
+
+	<section class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4 col-xs-4 text-center colu">
+
+				<img class="img-responsive" draggable="true" src="assets/img/food1.jpg" alt="" ondragstart="drag(event)" id="food1">
+				<img class="img-responsive" draggable="true" src="assets/img/food2.jpg" alt="" ondragstart="drag(event)" id="food2">
+				<img class="img-responsive" draggable="true" src="assets/img/food3.jpg" alt="" ondragstart="drag(event)" id="food3">
+			</div>
+			<div class="col-sm-4 col-xs-4 text-center colu">
+				<img class="img-responsive" draggable="true" src="assets/img/food1.jpg" alt="" ondragstart="drag(event)" id="food4">
+				<img class="img-responsive" draggable="true" src="assets/img/food2.jpg" alt="" ondragstart="drag(event)" id="food5">
+				<img class="img-responsive" draggable="true" src="assets/img/food3.jpg" alt="" ondragstart="drag(event)" id="food6">
+			</div>
+			<div class="col-sm-4 col-xs-4 text-center colu">
+				<img class="img-responsive" draggable="true" src="assets/img/food1.jpg" alt="" ondragstart="drag(event)" id="food7">
+				<img class="img-responsive" draggable="true" src="assets/img/food2.jpg" alt="" ondragstart="drag(event)" id="food8">
+				<img class="img-responsive" draggable="true" src="assets/img/food3.jpg" alt="" ondragstart="drag(event)" id="food9">
+			</div>			
+		</div>
+	</section>	
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/8f8db047c3.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>

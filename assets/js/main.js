@@ -19,15 +19,16 @@ document.getElementById("btn-login").addEventListener('click', function(){
 
 
 function validarNombre(inputNombre) {    
-	if(inputNombre.value.match(letrasNombre)){  
-		document.getElementsByClassName("botoncito")[0].setAttribute("href","collage.html");  
-	} else {  
+	if(inputNombre.value == ""){  
 		inputNombre.value = "";
 		var rellenarText = document.createTextNode("Ingresar nombre de usuario");
 		var labelError = document.createElement('small');
 		labelError.classList.add('error');
 		labelError.appendChild(rellenarText);
 		document.getElementById("nombre1").appendChild(labelError);
+		  
+	} else {  
+		document.getElementsByClassName("botoncito")[0].setAttribute("href","collage.html");
 	}  
 } 
 
@@ -44,4 +45,26 @@ function validarPassword(inputPw) {
 		document.getElementsByClassName("botoncito")[0].setAttribute("href","collage.html"); 
 	}  
 } 
+
+//Drag and drop functions
+
+function drag(ev){ //ev de event es lo mismo, los atributos pueden variar
+	ev.dataTransfer.setData('text', ev.target.id);
+	//img se lee como text en el navegador
+	//target es el objetivo 
+}
+
+
+function finalDrop(ev){
+	ev.preventDefault(); 
+	//SIEMPRE se pondrá esto 
+
+}
+
+function drop(ev){
+	ev.preventDefault();
+	var dato = ev.dataTransfer.getData('text');
+	//getData trae.. sin el ev.target.id
+	ev.target.appendChild(document.getElementById(dato));	
+}
 
