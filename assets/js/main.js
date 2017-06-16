@@ -10,17 +10,18 @@ document.getElementById("btn-login").addEventListener('click', function(){
 	
 	validarNombre(inputNombre);
 	validarPassword(inputPw);
-/*
+
 	if(validarNombre(inputNombre) && validarPassword(inputPw)){
-		document.getElementById("btn-login").setAttribute("href","gallery.html"); 
-	} */
+		//document.getElementById("btn-login").setAttribute("href","gallery.html"); 
+		window.open('collage.html');
+	} 
 
 });
 
 
 function validarNombre(inputNombre) {    
 	if(inputNombre.value == ""){  
-		inputNombre.value = "";
+		
 		var rellenarText = document.createTextNode("Ingresar nombre de usuario");
 		var labelError = document.createElement('small');
 		labelError.classList.add('error');
@@ -29,6 +30,7 @@ function validarNombre(inputNombre) {
 		  
 	} else {  
 		document.getElementsByClassName("botoncito")[0].setAttribute("href","collage.html");
+		return true;
 	}  
 } 
 
@@ -42,29 +44,26 @@ function validarPassword(inputPw) {
 		labelError.appendChild(rellenarText);
 		document.getElementById("pw1").appendChild(labelError);
 	} else {  
-		document.getElementsByClassName("botoncito")[0].setAttribute("href","collage.html"); 
+		document.getElementsByClassName("botoncito")[0].setAttribute("href","collage.html");
+		return true; 
 	}  
 } 
 
+
 //Drag and drop functions
 
-function drag(ev){ //ev de event es lo mismo, los atributos pueden variar
+function drag(ev){ 
 	ev.dataTransfer.setData('text', ev.target.id);
-	//img se lee como text en el navegador
-	//target es el objetivo 
 }
 
 
 function finalDrop(ev){
 	ev.preventDefault(); 
-	//SIEMPRE se pondrá esto 
-
 }
 
 function drop(ev){
 	ev.preventDefault();
 	var dato = ev.dataTransfer.getData('text');
-	//getData trae.. sin el ev.target.id
 	ev.target.appendChild(document.getElementById(dato));	
 }
 

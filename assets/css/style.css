@@ -25,14 +25,13 @@ input{
 	border: none;
 	width: 100%;
 	line-height: 50px;
-	margin-bottom: 20px;
+	margin: 10px 0;
 	border-radius: 5px;
 	padding-left: 15px;
 }
 
 
 input[placeholder]{      
-	font-family: 'Lato', sans-serif;
 	color: #fff;
 }
 
@@ -57,14 +56,15 @@ input::placeholder {
 
 .error{
     padding: .25em .5em .35em .5em;
-    margin-top: .5em;
+    margin-top: 0px;
     margin-bottom: .55em;
     display: inline-block;
     position: relative;
-    color: red;
-    background-color: #fed136;
-    border-color: red;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
+    
 }
+
 
 
