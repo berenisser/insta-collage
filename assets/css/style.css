@@ -8,14 +8,19 @@ section{
 	background: -webkit-linear-gradient(to right top, #d27940, #45c48e); 
 	background: linear-gradient(to right top, #d27940, #45c48e);
 	height: 100vh;
+	padding-top: 15px;
 }
 
 .insta{
 	padding-top: 60px;
 }
 
+.blanco{
+	color: #fff;
+}
+
 input{
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.1);
 	outline: none;
 	border: none;
 	width: 100%;
@@ -40,6 +45,24 @@ input::placeholder {
 	color: #fff;
 	width: 100%;
 	border: 1px solid white;
-	padding: 18px 125px;
+	line-height: 40px;
 	border-radius: 5px;
+	background-color: transparent;
+	margin-bottom: 20px;
+}
+
+.col-btn{
+	width: 100%;
+}
+
+.error{
+    padding: .25em .5em .35em .5em;
+    margin-top: .5em;
+    margin-bottom: .55em;
+    display: inline-block;
+    position: relative;
+    color: red;
+    background-color: #fed136;
+    border-color: red;
+    border-radius: 5px;
 }
